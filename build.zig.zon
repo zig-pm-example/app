@@ -3,8 +3,8 @@
     .version = "0.1.0",
     .dependencies = .{
         .libname = .{
-            .url = "https://github.com/InKryption/zig-pm-example-lib/archive/cc58951e5ebf011350b66b8af4d3812e2bbff176.tar.gz",
-            .hash = "1220e42732bd08f861758aee9166cae8b42e83d899725e6e4553e3e54f7bd4b59445",
+            .url = "https://github.com/InKryption/zig-pm-example-lib/archive/920a9894bc2aff595fab56a6a9760dd8f26eb070.tar.gz",
+            .hash = "12202cd689665745cbf18bad41c46945ae7e9230545c4bbeea55b0c4c2f9e977eb36",
         },
     },
 }

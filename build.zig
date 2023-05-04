@@ -10,10 +10,10 @@ pub fn build(b: *std.Build) void {
         .target = target,
         .optimize = optimize,
     });
-    exe.install();
+    b.installArtifact(exe);
 
     const run_cmd = b.addRunArtifact(exe);
-    run_cmd.condition = .always;
+    run_cmd.has_side_effects = true;
     run_cmd.step.dependOn(b.getInstallStep());
     if (b.args) |args| {
         run_cmd.addArgs(args);
@@ -33,7 +33,7 @@ pub fn build(b: *std.Build) void {
     exe.linkLibrary(baz_mod);
 
     const run_bar = b.addRunArtifact(bar_mod);
-    run_bar.condition = .always;
+    run_bar.has_side_effects = true;
     if (b.args) |args| {
         run_bar.addArgs(args);
     }
