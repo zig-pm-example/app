@@ -1,4 +1,4 @@
-# example-app
+# app
 
 This is an example of an application in zig depending on a zig library using the zig package manager.
 
